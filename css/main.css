@@ -1,44 +1,33 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   background-color: #FFC107;
 }
 
-h1 {
-  color: black;
-  text-align: center;
-  padding: 1em 0;
-}
-
 li {
-  display: grid;
+  color: white;
   list-style: none;
-  background-color: #009688;
-  color: black;
-  font-weight: bold;
   text-align: center;
-  place-content: center;
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 80px;
-  grid-gap: 2px;
+li:nth-child(odd) {
+  background-color: #00BCD4;
 }
 
-.list :nth-child(1),
-.list :nth-child(6) {
-  grid-column: 1/ span2 !important;
+li:nth-child(even) {
+  background-color: #F44336;
 }
 
-.item-odd {
-  grid-column: 2/3;
+li:nth-child(3) {
+  background-color: aqua;
 }
 
-.item-even {
-  grid-column: 1/2;
+li:nth-child(4) {
+  background: #FFEB3B;
 }

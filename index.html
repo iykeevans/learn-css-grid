@@ -6,18 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Learn Css Grid</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 100px auto;
+      grid-template-rows: 50px 50px 200px;
+      grid-gap: 3px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Why Learn Css Grid Layout?</h1>
-  <ul class="list">
-    <li>EASIER TO CREATE TWO DIMENSIONAL LAYOUT</li>
-    <li>SIMPLER MARKUP</li>
-    <li class="item-odd">FLEXIBLE</li>
-    <li class="item-even">SKIP FRAMEWORKS</li>
-    <li>BROWSER SUPPORT</li>
-    <li>SEE EXAMPLES</li>
-  </ul>
+  <div class="container">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+  </div>
 </body>
 
 </html>
