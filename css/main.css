@@ -8,6 +8,12 @@ body {
   background-color: #FFC107;
 }
 
+.container {
+  display: grid;
+  grid-template: repeat(2, 50px) / repeat(3, 1fr);
+  grid-gap: 3px;
+}
+
 li {
   color: white;
   list-style: none;
