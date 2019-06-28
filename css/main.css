@@ -11,8 +11,13 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 15vh 69vh 15vh;
+  grid-template-rows: 15vh auto 15vh;
   grid-gap: 3px;
+  height: 100%;
+  grid-template-areas:
+    "m h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "m f f f f f f f f f f f"
 }
 
 div {
@@ -24,21 +29,20 @@ div {
 
 .header {
   background-color: #00BCD4;
-  grid-column-start: 2;
-  grid-column-end: -1;
+  grid-area: h;
 }
 
 .menu {
   background-color: #F44336;
-  grid-row: 1/-1;
+  grid-area: m;
 }
 
 .content {
   background-color: aqua;
-  grid-column: 2/-1;
+  grid-area: c;
 }
 
 .footer {
   background: #FFEB3B;
-  grid-column: 2/-1;
+  grid-area: f;
 }
