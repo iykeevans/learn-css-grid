@@ -10,30 +10,35 @@ body {
 
 .container {
   display: grid;
-  grid-template: repeat(2, 50px) / repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 15vh 69vh 15vh;
   grid-gap: 3px;
 }
 
-li {
+div {
   color: white;
-  list-style: none;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
 }
 
-li:nth-child(odd) {
+.header {
   background-color: #00BCD4;
+  grid-column-start: 2;
+  grid-column-end: -1;
 }
 
-li:nth-child(even) {
+.menu {
   background-color: #F44336;
+  grid-row: 1/-1;
 }
 
-li:nth-child(3) {
+.content {
   background-color: aqua;
+  grid-column: 2/-1;
 }
 
-li:nth-child(4) {
+.footer {
   background: #FFEB3B;
+  grid-column: 2/-1;
 }
