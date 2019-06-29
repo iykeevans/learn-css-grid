@@ -8,16 +8,11 @@ body {
   background-color: #FFC107;
 }
 
-.container {
+#container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 15vh auto 15vh;
-  grid-gap: 3px;
-  height: 100%;
-  grid-template-areas:
-    "m h h h h h h h h h h h"
-    "m c c c c c c c c c c c"
-    "m f f f f f f f f f f f"
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 100px 100px;
+  grid-gap: 5px;
 }
 
 div {
@@ -27,22 +22,10 @@ div {
   font-weight: bold;
 }
 
-.header {
+div:nth-child(even) {
   background-color: #00BCD4;
-  grid-area: h;
 }
 
-.menu {
-  background-color: #F44336;
-  grid-area: m;
-}
-
-.content {
-  background-color: aqua;
-  grid-area: c;
-}
-
-.footer {
-  background: #FFEB3B;
-  grid-area: f;
+div:nth-child(odd) {
+  //background-color: #F44336;
 }
